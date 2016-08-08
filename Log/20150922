@@ -1,0 +1,275 @@
+
+--------------------------------------------header------------------------------------------------
+2015-09-22 15:09:01,446 [27] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 15:09:01-----In :<PKG_lvm_yield_tracking.select_records> module,error message:ORA-01555: 快照过旧: 回退段号 8 (名称为 "_SYSSMU8_3612859353$") 过小
+
+----------------------detail start--------------------------
+System.Data.OracleClient.OracleException (0x80131938): ORA-01555: 快照过旧: 回退段号 8 (名称为 "_SYSSMU8_3612859353$") 过小
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleDataReader.ReadInternal()
+   在 System.Data.OracleClient.OracleDataReader.Read()
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 15:09:01,446 [50] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 15:09:01-----In :<PKG_lvm_yield_tracking.select_records> module,error message:ORA-01555: 快照过旧: 回退段号 8 (名称为 "_SYSSMU8_3612859353$") 过小
+
+----------------------detail start--------------------------
+System.Data.OracleClient.OracleException (0x80131938): ORA-01555: 快照过旧: 回退段号 8 (名称为 "_SYSSMU8_3612859353$") 过小
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleDataReader.ReadInternal()
+   在 System.Data.OracleClient.OracleDataReader.Read()
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 15:09:01,446 [6] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 15:09:01-----In :<PKG_lvm_yield_tracking.select_records> module,error message:ORA-01555: 快照过旧: 回退段号 8 (名称为 "_SYSSMU8_3612859353$") 过小
+
+----------------------detail start--------------------------
+System.Data.OracleClient.OracleException (0x80131938): ORA-01555: 快照过旧: 回退段号 8 (名称为 "_SYSSMU8_3612859353$") 过小
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleDataReader.ReadInternal()
+   在 System.Data.OracleClient.OracleDataReader.Read()
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 15:57:38,241 [28] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 15:57:38-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleConnection connection, OciStatementHandle statementHandle)
+   在 System.Data.OracleClient.OracleParameterBinding.GetOutputValue(NativeBuffer parameterBuffer, OracleConnection connection, Boolean needCLSType)
+   在 System.Data.OracleClient.OracleParameterBinding.PostExecute(NativeBuffer parameterBuffer, OracleConnection connection)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 16:40:23,763 [43] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 16:40:23-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleConnection connection, OciStatementHandle statementHandle)
+   在 System.Data.OracleClient.OracleParameterBinding.GetOutputValue(NativeBuffer parameterBuffer, OracleConnection connection, Boolean needCLSType)
+   在 System.Data.OracleClient.OracleParameterBinding.PostExecute(NativeBuffer parameterBuffer, OracleConnection connection)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 16:41:04,121 [54] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 16:41:04-----In :<PKG_lvm_yield_tracking.select_records> module,error message:ORA-01555: 快照过旧: 回退段号 36 (名称为 "_SYSSMU36_2677280782$") 过小
+
+----------------------detail start--------------------------
+System.Data.OracleClient.OracleException (0x80131938): ORA-01555: 快照过旧: 回退段号 36 (名称为 "_SYSSMU36_2677280782$") 过小
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleDataReader.ReadInternal()
+   在 System.Data.OracleClient.OracleDataReader.Read()
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 17:26:26,378 [55] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 17:26:26-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleCommand command, OciStatementHandle statementHandle, String statementText, CommandBehavior commandBehavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader()
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 17:26:26,378 [20] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 17:26:26-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleConnection connection, OciStatementHandle statementHandle)
+   在 System.Data.OracleClient.OracleParameterBinding.GetOutputValue(NativeBuffer parameterBuffer, OracleConnection connection, Boolean needCLSType)
+   在 System.Data.OracleClient.OracleParameterBinding.PostExecute(NativeBuffer parameterBuffer, OracleConnection connection)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 17:26:26,378 [40] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 17:26:26-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleConnection connection, OciStatementHandle statementHandle)
+   在 System.Data.OracleClient.OracleParameterBinding.GetOutputValue(NativeBuffer parameterBuffer, OracleConnection connection, Boolean needCLSType)
+   在 System.Data.OracleClient.OracleParameterBinding.PostExecute(NativeBuffer parameterBuffer, OracleConnection connection)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 18:08:17,714 [34] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 18:08:17-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleCommand command, OciStatementHandle statementHandle, String statementText, CommandBehavior commandBehavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader()
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 18:08:17,714 [23] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 18:08:17-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleConnection connection, OciStatementHandle statementHandle)
+   在 System.Data.OracleClient.OracleParameterBinding.GetOutputValue(NativeBuffer parameterBuffer, OracleConnection connection, Boolean needCLSType)
+   在 System.Data.OracleClient.OracleParameterBinding.PostExecute(NativeBuffer parameterBuffer, OracleConnection connection)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 18:08:17,747 [12] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 18:08:17-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.ReadInternal()
+   在 System.Data.OracleClient.OracleDataReader.Read()
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 18:08:17,748 [52] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 18:08:17-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.ReadInternal()
+   在 System.Data.OracleClient.OracleDataReader.Read()
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 18:08:17,748 [69] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 18:08:17-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   在 System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   在 System.Data.OracleClient.OracleCommandBuilder.ResolveName(OracleCommand command, String nameToResolve, String& schema, String& packageName, String& objectName, String& dblink)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 18:08:17,748 [37] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 18:08:17-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleConnection connection, OciStatementHandle statementHandle)
+   在 System.Data.OracleClient.OracleParameterBinding.GetOutputValue(NativeBuffer parameterBuffer, OracleConnection connection, Boolean needCLSType)
+   在 System.Data.OracleClient.OracleParameterBinding.PostExecute(NativeBuffer parameterBuffer, OracleConnection connection)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-09-22 18:08:17,755 [9] ERROR dcoolLogger [(null)] <(null)> - 2015/9/22 18:08:17-----In :<PKG_lvm_yield_tracking.select_records> module,error message:无效操作。连接被关闭。
+----------------------detail start--------------------------
+System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.OracleClient.OracleConnection.GetOpenInternalConnection()
+   在 System.Data.OracleClient.OracleConnection.get_ErrorHandle()
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleCommand command, OciStatementHandle statementHandle, String statementText, CommandBehavior commandBehavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader()
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+
+--------------------------------------------footer------------------------------------------------

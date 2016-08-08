@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<message>
+<employees>
+    <fristname>bill</fristname>
+    <lastname>tom</lastname>    
+</employees>
+<employees>
+  <fristname>ee</fristname>
+  <lastname>aa</lastname>
+</employees>
+</message>

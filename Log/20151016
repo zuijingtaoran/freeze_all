@@ -1,0 +1,86 @@
+
+--------------------------------------------header------------------------------------------------
+2015-10-16 14:14:13,343 [10] ERROR dcoolLogger [(null)] <(null)> - 2015/10/16 14:14:13-----In :<PKG_lvm_yield_tracking.select_records> module,error message:ORA-24338: 未执行语句句柄
+
+----------------------detail start--------------------------
+System.Data.OracleClient.OracleException (0x80131938): ORA-24338: 未执行语句句柄
+
+   在 System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleConnection connection, OciStatementHandle statementHandle)
+   在 System.Data.OracleClient.OracleParameterBinding.GetOutputValue(NativeBuffer parameterBuffer, OracleConnection connection, Boolean needCLSType)
+   在 System.Data.OracleClient.OracleParameterBinding.PostExecute(NativeBuffer parameterBuffer, OracleConnection connection)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-10-16 14:15:12,097 [6] ERROR dcoolLogger [(null)] <(null)> - 2015/10/16 14:15:12-----In :<PKG_lvm_yield_tracking.select_records> module,error message:ORA-24338: 未执行语句句柄
+
+----------------------detail start--------------------------
+System.Data.OracleClient.OracleException (0x80131938): ORA-24338: 未执行语句句柄
+
+   在 System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleConnection connection, OciStatementHandle statementHandle)
+   在 System.Data.OracleClient.OracleParameterBinding.GetOutputValue(NativeBuffer parameterBuffer, OracleConnection connection, Boolean needCLSType)
+   在 System.Data.OracleClient.OracleParameterBinding.PostExecute(NativeBuffer parameterBuffer, OracleConnection connection)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-10-16 14:23:03,025 [6] ERROR dcoolLogger [(null)] <(null)> - 2015/10/16 14:23:03-----In :<PKG_lvm_yield_tracking.select_records> module,error message:ORA-00604: 递归 SQL 级别 1 出现错误
+ORA-01003: 语句未进行语法分析
+
+----------------------detail start--------------------------
+System.Data.OracleClient.OracleException (0x80131938): ORA-00604: 递归 SQL 级别 1 出现错误
+ORA-01003: 语句未进行语法分析
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+2015-10-16 14:27:07,960 [10] ERROR dcoolLogger [(null)] <(null)> - 2015/10/16 14:27:07-----In :<PKG_lvm_yield_tracking.select_records> module,error message:ORA-24338: 未执行语句句柄
+
+----------------------detail start--------------------------
+System.Data.OracleClient.OracleException (0x80131938): ORA-24338: 未执行语句句柄
+
+   在 System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleDataReader.FillColumnInfo()
+   在 System.Data.OracleClient.OracleDataReader..ctor(OracleConnection connection, OciStatementHandle statementHandle)
+   在 System.Data.OracleClient.OracleParameterBinding.GetOutputValue(NativeBuffer parameterBuffer, OracleConnection connection, Boolean needCLSType)
+   在 System.Data.OracleClient.OracleParameterBinding.PostExecute(NativeBuffer parameterBuffer, OracleConnection connection)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+
+--------------------------------------------footer------------------------------------------------

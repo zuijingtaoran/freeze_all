@@ -1,0 +1,23 @@
+
+--------------------------------------------header------------------------------------------------
+2015-10-27 10:16:57,384 [11] ERROR dcoolLogger [(null)] <(null)> - 2015/10/27 10:16:57-----In :<PKG_lvm_yield_tracking.select_records> module,error message:ORA-03135: 连接失去联系
+进程 ID: 10168
+会话 ID: 144 序列号: 28093
+
+----------------------detail start--------------------------
+System.Data.OracleClient.OracleException (0x80131938): ORA-03135: 连接失去联系
+进程 ID: 10168
+会话 ID: 144 序列号: 28093
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   在 System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   在 System.Data.OracleClient.OracleCommandBuilder.ResolveName(OracleCommand command, String nameToResolve, String& schema, String& packageName, String& objectName, String& dblink)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+

@@ -1,0 +1,25 @@
+
+--------------------------------------------header------------------------------------------------
+2016-07-20 10:27:28,077 [111] ERROR dcoolLogger [(null)] <(null)> - 2016-07-20 10:27:28-----In :<PKG_lvm_yield_tracking.select_records> module,error message:ORA-03135: connection lost contact
+Process ID: 19954
+Session ID: 120 Serial number: 36971
+
+----------------------detail start--------------------------
+System.Data.OracleClient.OracleException (0x80131938): ORA-03135: connection lost contact
+Process ID: 19954
+Session ID: 120 Serial number: 36971
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   在 System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   在 System.Data.OracleClient.OracleCommandBuilder.ResolveName(OracleCommand command, String nameToResolve, String& schema, String& packageName, String& objectName, String& dblink)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParametersFromStoredProcedure(OracleConnection connection, OracleCommand command)
+   在 System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(OracleCommand command)
+   在 DCoolWeb.Data._Handler.PrepareParametersIDbPro(IDbCommand cmd, Object[] parameters)
+   在 DCoolWeb.Data.DbAccessor.CreateCommand(IDbConnection connection, String cmdtext, CommandType cmdtype, IDbTransaction tran, Object[] paras)
+   在 DCoolWeb.Data.Oracle._DataProvier.ExecutePro(String connectionString, String storedProcName, Boolean onlyGetParas, Int32& iCount, DataSet& ds, Object[] parameters)
+----------------------detail end----------------------------
+
+
+--------------------------------------------footer------------------------------------------------
